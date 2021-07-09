@@ -2,9 +2,13 @@
 
 > 创建这个项目的初衷是为了系统性的学习spring、MySQL、Redis、k8s等技术
 
+---
+
 ## springboot
 
 > 根据2.5.2版本spring-boot-reference进行学习
+
+---
 
 ### 创建spring项目
 
@@ -57,6 +61,8 @@ $ mvn dependency:tree
     </dependencies>
 ```
 
+---
+
 ### 编写代码
 
 创建 `src/main/java` 目录
@@ -101,3 +107,4 @@ public class Application {
 
 `@RequestMapping` 用来映射 `http` 请求，解析路径为 `/` 下的请求映射到 `home()` 方法。
 
+**`@EnableAutoConfiguration` 注解**
