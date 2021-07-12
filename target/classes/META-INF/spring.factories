@@ -1,0 +1,1 @@
+org.springframework.context.ApplicationListener=com.angers.project.listeners.ApplicationReadinessStateReporter,com.angers.project.listeners.ApplicationStartingEventListener
