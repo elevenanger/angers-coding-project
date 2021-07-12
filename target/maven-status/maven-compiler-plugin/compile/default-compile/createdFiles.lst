@@ -1,9 +1,0 @@
-com/angers/project/listeners/ApplicationReadinessStateReporter.class
-com/angers/project/listeners/ApplicationStartingEventListener.class
-com/angers/project/runner/SecondCommandLineRunner.class
-com/angers/project/runner/SecondApplicationRunner.class
-com/angers/project/Application.class
-com/angers/project/runner/FirstApplicationRunner.class
-com/angers/project/runner/FirstCommandlineRunner.class
-com/angers/project/listeners/ApplicationReadinessStateReporter$1.class
-com/angers/project/listeners/ApplicationLocalCacheVerifier.class
