@@ -254,7 +254,7 @@ public class ApplicationLocalCacheVerifier {
 
 ---
 
-### ApplicationEvent 和 Listener
+### `ApplicationEvent` 和 `Listener`
 
 spring框架除了发送一些常规的事件，例如 `ContextRefreshedEvent` , `SpringApplication` 还会发送一些额外的事件。
 
@@ -286,6 +286,8 @@ org.springframework.context.ApplicationListener=com.angers.project.tools.Applica
 <!-- TODO -->
 > `Event listeners` 应当尽量避免用于处理耗时比较长的任务，因为它们默认都是使用同一个线程的，作为替代，可以使用 `ApplicationRunner` 和 `CommandLineRunner`
 
+---
+
 ### `ApplicationRunner` 和 `CommandLineRunner`
 
 可以通过实现 `ApplicationRunner` 和 `CommandLineRunner` 在spring启动开始运行一些特定的代码，这两个接口都有一个 `run` 方法，我们只需要实现这个方法即可，二者的区别为：`ApplicationRunner` 中的 `run` 方法参数为 `ApplicationArguments` , `CommandLineRunner` 中的 `run` 方法的参数为 `String` 数组，如果有多个 `runner` ，需要添加注解 `@Order` 指定执行顺序。
@@ -316,3 +318,78 @@ public class FirstApplicationRunner implements ApplicationRunner{
 2021-07-12 09:11:00.257  INFO 24906 --- [           main] .a.p.l.ApplicationReadinessStateReporter : ACCEPTING_TRAFFIC应用启动成功，可以正常接收请求！
 2021-07-12 09:11:00.259  INFO 24906 --- [           main] .a.p.l.ApplicationReadinessStateReporter : 应用启动成功，可以正常接收请求!
 ```
+
+---
+
+### `spring` 配置
+
+`spring` 有多种配置方式，我们这里采用的是 `yaml` 配置文件
+
+---
+
+#### 配置文件
+
+在 `src/main/resources/` 目录创建 `application.yml` 文件， `spring` 会自动将其识别为配置文件
+
+> 在路径下如果既有 `.properties` 和 `.yml` 文件，spring会优先采用 `.properties` 文件作为配置文件  
+> 一般情况下，建议统一配置文件的格式，如果存在多种配置方式， `spring` 会导致配置信息被覆盖  
+
+---
+
+##### 使用操作系统环境变量
+
+使用操作系统环境变量需要遵循 `Unix` 的命名规范：
+
+* 替换点 `.` 为下划线 `_`
+* 移除所有的破折号 `-`
+* 字母转换为大写
+
+例如：**my.app.name-info** 替换为 **MY_APP_NAMEINFO**
+
+---
+
+#### 日志
+
+`spring` 支持多种日志记录系统，比如：
+
+* Logback
+* Log4j 2
+* Java Util Logging
+
+本项目使用 `Logback` 进行日志记录
+
+---
+
+##### 日志格式
+
+默认的日志格式如下：
+
+``` log
+2021-07-13 10:54:00.127  INFO 45814 --- [           main] c.a.p.runner.FirstApplicationRunner      : first application runner
+```
+
+输出信息包括以下几个部分：
+
+1. **日期和时间** 精确到毫秒
+2. **日志级别**
+3. **进程号**
+4. **---** 开始记录实际的日志信息
+5. **线程名**
+6. **记录者名称** 通常是输出这一行日志的类名（一般是缩写）
+7. **日志信息**
+
+---
+
+##### 日志配置
+
+在 `src/main/resources/` 目录创建 `logback-spring.xml` 文件
+
+> 可以使用 `Spring Environment` 中定义的参数进行配置  
+
+通过 `<springProperty>` 标签引入 `Spring Environment` 中的参数值
+
+``` xml
+<springProperty scope="context" name="appname" source="spring.application.name"/>
+```
+
+### 开发web应用

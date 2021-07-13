@@ -18,8 +18,6 @@ public class ApplicationReadinessStateReporter implements ApplicationListener<Av
 
     public final static String FILE_NAME = "ApplicationReady.txt";
 
-    private AvailabilityChangeEvent event;
-    
     @EventListener
     public void onStateChanged(AvailabilityChangeEvent<ReadinessState> event){
         switch(event.getState()){
