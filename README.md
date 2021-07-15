@@ -412,6 +412,8 @@ flush privileges;
 
 #### 配置数据库
 
+使用MySQL数据库
+
 ``` yml
 spring: 
   datasource: 
@@ -419,6 +421,16 @@ spring:
     username: "anger"
     password: "anger"
     driver-class-name: com.mysql.jdbc.Driver
+```
+
+添加数据库驱动依赖
+
+```xml
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.25</version>
+</dependency>
 ```
 
 ---
@@ -448,11 +460,33 @@ CREATE TABLE `user_info`(
 插入数据
 
 ``` sql
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦1','18672948841',1,'20210205','yueyue1','123456');
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦2','18672948842',1,'20210205','yueyue2','123456');
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦3','18672948843',1,'20210205','yueyue3','123456');
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦4','18672948844',1,'20210205','yueyue4','123456');
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦5','18672948845',1,'20210205','yueyue5','123456');
-INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672948846',1,'20210205','yueyue6','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦1','18672941111',1,'20210205','yueyue1','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦2','18672941112',1,'20210205','yueyue2','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦3','18672941113',1,'20210205','yueyue3','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦4','18672941114',1,'20210205','yueyue4','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦5','18672941115',1,'20210205','yueyue5','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672941116',1,'20210205','yueyue6','123456');
 --ID设置了自增主键，插入为空会自动赋值
 ```
+
+添加mybatis plus依赖
+
+```xml
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus-boot-starter</artifactId>
+    <version>3.4.3.1</version>
+</dependency>
+```
+
+创建 `dao` 文件夹，创建用户mapper
+
+
+
+在 `Spring Boot` 启动类中添加 `@MapperScan` 注解，扫描 `dao` 文件夹
+
+```java
+@MapperScan("com.angers.project.dao")
+public class Application{}
+```
+
