@@ -386,10 +386,73 @@ public class FirstApplicationRunner implements ApplicationRunner{
 
 > 可以使用 `Spring Environment` 中定义的参数进行配置  
 
-通过 `<springProperty>` 标签引入 `Spring Environment` 中的参数值
+通过 `<springProperty>` 标签引入 `Spring Environment` 配置文件的参数值
 
 ``` xml
 <springProperty scope="context" name="appname" source="spring.application.name"/>
 ```
 
-### 开发web应用
+---
+
+### 数据库
+
+#### 创建数据库
+
+``` sql
+-- 创建数据库
+create database mydb default character set utf8 collate utf8_general_ci;
+-- 创建用户
+create user 'anger'@'%' identified by 'anger';
+-- 给用户授权
+grant all privileges on mydb.* to 'anger'@'%';
+flush privileges;
+```
+
+---
+
+#### 配置数据库
+
+``` yml
+spring: 
+  datasource: 
+    url: "jdbc:mysql://localhost:3306/mydb"
+    username: "anger"
+    password: "anger"
+    driver-class-name: com.mysql.jdbc.Driver
+```
+
+---
+
+#### 使用mybatis
+
+创建用户信息表
+
+``` sql
+DROP TABLE IF EXISTS `user_info`;
+CREATE TABLE `user_info`(
+    `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+    `create_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `modified_date` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+    `name` varchar(20) NOT NULL COMMENT '用户姓名',
+    `mobile_no` varchar(11) NOT NULL COMMENT '用户手机号',
+    `sex` TINYINT(1) COMMENT '性别,0:MALE;1:FEMALE',
+    `birthday` VARCHAR(8) COMMENT '生日',
+    `nick_name` varchar(20) NOT NULL COMMENT '用户昵称',
+    `password` varchar(255) NOT NULL COMMENT '密码',
+    PRIMARY KEY (`id`),
+    INDEX idx_user_info_mobile_no (`mobile_no`),
+    UNIQUE uk_user_info_nickname (`nick_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
+```
+
+插入数据
+
+``` sql
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦1','18672948841',1,'20210205','yueyue1','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦2','18672948842',1,'20210205','yueyue2','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦3','18672948843',1,'20210205','yueyue3','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦4','18672948844',1,'20210205','yueyue4','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦5','18672948845',1,'20210205','yueyue5','123456');
+INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672948846',1,'20210205','yueyue6','123456');
+--ID设置了自增主键，插入为空会自动赋值
+```
