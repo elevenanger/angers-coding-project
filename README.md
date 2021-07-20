@@ -4,7 +4,7 @@
 
 ---
 
-## springboot
+## `Spring Boot`
 
 > 根据2.5.2版本spring-boot-reference进行学习
 
@@ -168,13 +168,13 @@ java -jar target/coding-project-0.0.1-SNAPSHOT.jar
 
 #### Liveness 状态
 
-**Liveness** 状态表示应用内部服务可以正常的运作，或者能够从暂时的失败中恢复，如果应用无法正常运作，需要重启应用服务来恢复应用。
+**Liveness** 状态表示应用内部服务可以正常的运作，或者能够从暂时失败中恢复，如果应用无法正常运作，需要重启应用服务来恢复应用。
 
 ---
 
 #### Readiness 状态
 
-**Readiness** 状态表示应用能够地处理服务请求，通常的使用场景是：应用在启动过程中， `CommandLineRunner` 和 `ApplicationRunner` 还没有启动完成，无法正常的处理请求，或者在任何应用繁忙无法处理更多请求的场景。
+**Readiness** 状态表示应用能够地处理服务请求，通常使用场景是：应用在启动过程中， `CommandLineRunner` 和 `ApplicationRunner` 还没有启动完成，无法正常处理请求，或者在任何应用繁忙无法处理更多请求的场景。
 
 > 如果期望在启动过程中执行某项操作，应当使用 `CommandLineRunner` 和 `ApplicationRunner` 组件。
 
@@ -469,7 +469,7 @@ INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672941116',1
 --ID设置了自增主键，插入为空会自动赋值
 ```
 
-添加mybatis plus依赖
+添加 `mybatis plus` 依赖
 
 ```xml
 <dependency>

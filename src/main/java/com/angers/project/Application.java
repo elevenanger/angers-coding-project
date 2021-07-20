@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-@MapperScan("com.angers.project.dao")
+@MapperScan("com.angers.project.mapper")
 public class Application {
 
     @RequestMapping("/")
