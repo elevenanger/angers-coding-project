@@ -1,0 +1,11 @@
+
+G
+java:S2157"%Add a "clone()" method to this class.(åõÇüÿÿÿÿ8Ş±÷øó/
+F
+java:S2160"+Override the "equals" method in this class.(åõÇüÿÿÿÿ
+u
+java:S1210»"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¢¦ƒ ÿÿÿÿÿ
+K
+java:S1854"5Remove this useless assignment to local variable "x".(ÈØ÷K
+k
+java:S3252ô"OUse static access with "com.angers.project.inheritance.Person" for "getNextId".(ßœ»ãøÿÿÿÿ

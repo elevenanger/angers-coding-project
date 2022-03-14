@@ -350,13 +350,33 @@ public class FirstApplicationRunner implements ApplicationRunner{
 
 #### 日志
 
-`spring` 支持多种日志记录系统，比如：
+`spring` 支持多种日志实现框架：
 
 * Logback
 * Log4j 2
 * Java Util Logging
 
-本项目使用 `Logback` 进行日志记录
+`slf4j` 作为日志 `API` 
+
+##### `spring boot` 日志搭配
+
+`spring boot` 默认采用了 `slf4j` 和 `logback` 的日志搭配
+
+开发过程中，通过 `slf4j` 的 `API` 记录日志，底层实现为 `logback` 或者 `log4j` 等日志框架
+
+`spring boot` 默认的日志级别为 `info`
+
+##### 设置日志级别
+
+新建 `logback-spring.xml`
+
+设置日志级别
+
+```xml
+<root level="TRACE">
+    <appender-ref ref="STDOUT" />
+</root>
+```
 
 ---
 
@@ -481,8 +501,6 @@ INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672941116',1
 
 创建 `dao` 文件夹，创建用户mapper
 
-
-
 在 `Spring Boot` 启动类中添加 `@MapperScan` 注解，扫描 `dao` 文件夹
 
 ```java
@@ -490,3 +508,41 @@ INSERT INTO user_info VALUES (null,SYSDATE(),SYSDATE(),'小悦6','18672941116',1
 public class Application{}
 ```
 
+### 使用 `spring boot` 的异步框架
+
+创建配置类 `AsyncConfig` 开启异步
+
+> `@Configuration` 注解声明这是一个配置类  
+> `EnableAsync` 开启异步  
+
+```java
+package com.angers.project.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+@Configuration
+@EnableAsync
+public class AsyncConfig {
+
+}
+```
+
+在方法上使用 `@Async` 注解即可实现方法的异步调用
+
+### 使用 `swagger` 生成接口文档
+
+#### 引入相关的依赖
+
+```xml
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>3.0.0</version>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>3.0.0</version>
+</dependency>
+```

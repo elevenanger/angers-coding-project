@@ -1,6 +1,5 @@
 package com.angers.project;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup;
@@ -9,11 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-@MapperScan("com.angers.project.mapper")
 public class Application {
 
     @RequestMapping("/")
-        public String home() {
+    public String home() {
         return "Hello World!";
     }
 
