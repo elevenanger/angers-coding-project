@@ -2,6 +2,7 @@ package com.angers.project.inheritance;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +17,7 @@ import java.util.Arrays;
  * 实现接口可以规避多重继承的低效和复杂度，并提供多重继承的好处
  */
 @Slf4j
-public class Employee extends Person implements Comparable<Employee>,Cloneable{
+public class Employee extends Person implements Comparable<Employee>,Cloneable, Serializable{
 
 
     /*
@@ -185,7 +186,7 @@ public class Employee extends Person implements Comparable<Employee>,Cloneable{
      * @return 0 相等，1 比较对象较大 ，-1 当前对象较大
      */
     public int compareTo(Employee o) {
-        return Double.compare(o.getSalary(),this.getSalary());
+        return Double.compare(this.getSalary(),o.getSalary());
     }
 
     public static void main(String [] args){
