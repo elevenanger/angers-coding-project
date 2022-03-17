@@ -79,6 +79,12 @@ public  final class Manager extends Employee {
         bonus = 1000;
     }
 
+    public static Manager initCEO(){
+        Manager ceo = new Manager();
+        ceo.setName("Boss.CEO");
+        return ceo;
+    }
+
     /**
      * 无参构造函数
      */

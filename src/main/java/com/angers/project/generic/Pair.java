@@ -1,12 +1,14 @@
 package com.angers.project.generic;
 
 import com.angers.project.inheritance.Employee;
+import com.angers.project.inheritance.Manager;
 import com.angers.project.inheritance.MasterStudent;
 import com.angers.project.inheritance.Person;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.function.Supplier;
 
 /**
  * 泛型类
@@ -28,6 +30,8 @@ import java.util.ArrayList;
  * 对于 T 运行时的类型查询，仅适用于原始类型
  * a instanceof Pair<String> 是错误的，应该是
  * a instanceof Pair<T>
+ * 泛型类不能继承 Throwable,所以无法 catch 泛型类 ，也无法直接 throw
+ * 但是类型变量可以用 Throwable 约束，并抛出（在代码逻辑中，本质上它就是一个已经实例化的 Throwable 对象）
  */
 @Slf4j
 public class Pair <T> {
@@ -36,14 +40,18 @@ public class Pair <T> {
     泛型实例域，类型 T
     如果没有继承关系，实例域的类型也会被编译器转换为原始类型：
     private Object first;
+    类型参数不能使用 static 修饰
      */
     private T first;
     private T second;
-
     /**
      * 无参构造器
      */
     public Pair(){
+        /*
+        不能直接使用类型变量进行实例化对象的操作
+        first = new T(); 是错误的写法
+         */
         first = null;
         second = null;
     }
@@ -59,6 +67,17 @@ public class Pair <T> {
     public Pair(T first,T second){
         this.first = first;
         this.second = second;
+    }
+
+    /**
+     * 实例化方法
+     * @param first Supplier 接口函数，通过调用类型为 T 的无参构造器或者无参实例化方法实例化 T 对象
+     * @param second 同上
+     * @param <T> 通过具体类型实例化的泛型对象
+     * @return 实例化的Pair <T> 对象
+     */
+    public static <T> Pair<T> makePair(Supplier<T> first,Supplier<T> second){
+        return new Pair<>(first.get(),second.get());
     }
 
     /**
@@ -135,7 +154,9 @@ public class Pair <T> {
      * @param a 类型参数 ，T... 表示传入任意数量的类型参数
      * @param <T> 类型变量，在 public static 修饰符之后
      * @return 类型变量值
+     * SafeVarargs 注解仅作用于 static private 和 final 方法
      */
+    @SafeVarargs
     public static <T> T middleValue(T... a){
         return a[a.length/2];
     }
@@ -159,6 +180,28 @@ public class Pair <T> {
             if (minValue.compareTo(v)>0) minValue = v;
         }
         return minValue;
+    }
+
+    /**
+     * 打印 person pair 中各个 Person 对象的信息
+     * @param person 由 Person 类或者其子类对象实例化的 Pair 对象
+     * ? extends Person 表示继承 Person 的类
+     * ? 是通配符
+     */
+    public static void  printPersonPair(Pair<? extends Person> person){
+        log.info("print the first person: "+person.getFirst().toString());
+        log.info("print the second person: "+person.getSecond().toString());
+    }
+
+    /**
+     * 打印 Manager 父类对象
+     * @param person Manager 的父类对象
+     * ? super Manager 表示 Manager 的父类
+     * 通配符限制和类型变量限制相似，但是通配符限制还能进行父类限制
+     */
+    public static void printManagerSuperClassPair(Pair<? super Manager> person){
+        log.info("print the first manager super class object: "+person.getFirst().toString());
+        log.info("print the second manager super class object: "+person.getSecond().toString());
     }
 
     public static void main(String [] args){
@@ -209,5 +252,33 @@ public class Pair <T> {
         ArrayList<Pair<Employee>> employeeArrayList = new ArrayList<>();
         employeeArrayList.add(employeePair);
         log.info(employeeArrayList.get(0).getFirst().toString());
+        /*
+        分别通过无参实例化方法和构造函数实例化 Employee 对象
+         */
+        Pair<Employee> employeePair1 = Pair.makePair(Employee::initWellPaidInstance,Employee::new);
+        log.info(employeePair1.getFirst().toString()+";"+employeePair1.getSecond().toString());
+        printPersonPair(employeePair1);
+        Pair<Manager> managerPair = Pair.makePair(Manager::new,Manager::initCEO);
+        printPersonPair(managerPair);
+        printManagerSuperClassPair(managerPair);
+        printManagerSuperClassPair(employeePair1);
+        /*
+        使用一个 Person 对象接收 Pair<? extends Person> 实例化的对象，这个访问器方法的操作是安全的
+        但是不能使用 personPair.setFirst(managerPair.getFirst()) 来进行赋值
+        因为泛型在编译的过程中会被还原为原始类型
+        编译器只知道 setFirst 方法需要一个 Person 的子类对象，但是不知道具体的类型
+        泛型类型不满足此条件，会发生编译错误
+         */
+        Pair<? extends Person> personPair = employeePair1;
+        Person person = personPair.getFirst();
+        //personPair.setFirst(managerPair.getFirst());
+        log.info(person.toString());
+
+        /*
+        super 允许修改器调用， ? super Manager 原始类型 Object 满足此条件
+         */
+        Pair<? super Manager> managerSuperClassPair = employeePair;
+        managerSuperClassPair.setFirst(managerPair.getFirst());
+        log.info(managerPair.getFirst().toString());
     }
 }

@@ -170,6 +170,12 @@ public class Employee extends Person implements Comparable<Employee>,Cloneable, 
         return wellPaidMan;
     }
 
+    public static Employee initWellPaidInstance(){
+        Employee wellPaidMan = new Employee("richer",1000000.00,2022,2,17);
+        wellPaidMan.modifyEvaluations("rc");
+        return wellPaidMan;
+    }
+
     @Override
     public String toString() {
         return super.toString() + "{" +

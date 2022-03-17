@@ -1,27 +1,0 @@
-
-J
-java:S3740"/Provide the parametrized type for this generic.(°Ï—‚şÿÿÿÿ
-E
-java:S3740"/Provide the parametrized type for this generic.(”ñÙ
-B
-java:S1172",Remove this unused method parameter "query".(”ñÙ
-Y
-java:S1854-">Remove this useless assignment to local variable "employees3".(İóØæùÿÿÿÿ
-T
-java:S1854*">Remove this useless assignment to local variable "employees2".(Ÿ‡àŞ
-`
-java:S1854"">Remove this useless assignment to local variable "employees1".(´îöœùÿÿÿÿ8ùŞ×ñ/
-J
-java:S1481""/Remove this unused "employees1" local variable.(´îöœùÿÿÿÿ
-B
-java:S1905*",Remove this unnecessary cast to "ArrayList".(Ÿ‡àŞ
-E
-java:S1481*"/Remove this unused "employees2" local variable.(Ÿ‡àŞ
-Q
-java:S1481-"/Remove this unused "employees3" local variable.(İóØæùÿÿÿÿ8úŞ×ñ/
-‡
-java:S1319"lThe type of "rawArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(°Ï—‚şÿÿÿÿ
-†
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(”ñÙ
-q
-java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "list".(á„ËH

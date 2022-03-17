@@ -12,15 +12,11 @@ a
 o
 ?src/main/java/com/angers/project/inheritance/MasterStudent.java,8/2/82b0f209c5c36c904d40b8e6a7a418d44e9f3975
 l
-<src/main/java/com/angers/project/inheritance/EmployeeDB.java,b/b/bb8f0752f8c014960cc4dd64229b41cc9d10fd35
-l
 <src/main/java/com/angers/project/inheritance/Reflection.java,a/7/a7ff3f53c4834ba2e0d727ac0203bbe9af3c3b61
 k
 ;src/main/java/com/angers/project/inheritance/RankLevel.java,e/0/e06413dbe8f44bfc72c7615515685454f37e6b6e
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-s
-Csrc/main/java/com/angers/project/inheritance/LambdaExpressions.java,5/f/5f468599950fe26603e65b60a3619cf98d8fa33b
 i
 9src/main/java/com/angers/project/loader/CaesarCipher.java,8/b/8b1f53bf7b4709858cc663153ada9bcb44c7da08
 c
@@ -60,8 +56,6 @@ W
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 h
 8src/main/java/com/angers/project/exception/ReadData.java,5/8/5858901f21e7aa3e50d51aaf79c37dda56ec88ff
 i
@@ -70,7 +64,3 @@ k
 ;src/main/java/com/angers/project/interfaces/Comparable.java,1/5/15785b20f7df4a5f5297417cc1dd1f1ae1a55bbb
 h
 8src/main/java/com/angers/project/inheritance/Person.java,d/5/d5bceceed82dbd2419b3ea0e69f44cf965d38071
-i
-9src/main/java/com/angers/project/inheritance/Manager.java,5/8/584863a86f212061c5da0ecb0f6200ad4fcc0818
-j
-:src/main/java/com/angers/project/inheritance/Employee.java,0/c/0cb10c049e552b8fc16982f3c5b7892f935377b0
