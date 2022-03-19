@@ -62,5 +62,3 @@ i
 9src/main/java/com/angers/project/inheritance/Student.java,1/2/124d68d8f7211554da54e0af43848b3fe1cebd33
 k
 ;src/main/java/com/angers/project/interfaces/Comparable.java,1/5/15785b20f7df4a5f5297417cc1dd1f1ae1a55bbb
-h
-8src/main/java/com/angers/project/inheritance/Person.java,d/5/d5bceceed82dbd2419b3ea0e69f44cf965d38071
