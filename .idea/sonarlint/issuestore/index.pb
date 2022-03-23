@@ -37,10 +37,6 @@ s
 Csrc/main/java/com/angers/project/runner/FirstCommandlineRunner.java,c/c/ccbd6ab5bb8454f147804f106f371606a9cd39a7
 d
 4src/main/java/com/angers/project/inner/ArrayAlg.java,a/6/a6a1e5f149eef3add1ec5eb70294d229ae0223d4
-s
-Csrc/main/java/com/angers/project/exception/FileFormatException.java,e/0/e02d98bbf070a7cc9c74d59fc40ea942fc7e66e6
-p
-@src/main/java/com/angers/project/exception/ReadDataBasement.java,7/0/7042c84ebf9453a0721e8506cf59f68c77e5f3f7
 ]
 -src/test/com/angers/project/ObjectTester.java,d/5/d5a3825412df007dad77c50415bf0abde9070c30
 _
@@ -54,8 +50,6 @@ W
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-h
-8src/main/java/com/angers/project/exception/ReadData.java,5/8/5858901f21e7aa3e50d51aaf79c37dda56ec88ff
 i
 9src/main/java/com/angers/project/inheritance/Student.java,1/2/124d68d8f7211554da54e0af43848b3fe1cebd33
 k
@@ -96,7 +90,3 @@ q
 Asrc/main/java/com/angers/project/collections/CollectionsBase.java,8/7/878c000b9726e6876f1717f8b5ea84a8f47c34da
 q
 Asrc/main/java/com/angers/project/collections/HashSetBasement.java,b/6/b67150f2e676b9fcf2786215e0f3a2769a3fb842
-f
-6src/main/java/com/angers/project/concurrency/Bank.java,1/1/11afb53b5ebe5cece70317870385088c7c3e0928
-l
-<src/main/java/com/angers/project/concurrency/ThreadTest.java,6/1/61e4896e0b819bf21964a92ec32f8a0d0300372c

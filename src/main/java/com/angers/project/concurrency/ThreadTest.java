@@ -9,7 +9,7 @@ import java.util.Random;
 public class ThreadTest {
 
     public static final int DELAY = 10;
-    public static final int STEPS = 100;
+    public static final int STEPS = 10;
     public static final double MAX_AMOUNT = 1000.00;
 
     public static void main(String [] args){
@@ -33,6 +33,14 @@ public class ThreadTest {
         线程创建之后还没开始运行，这时候状态是 NEW
          */
         Thread t = new Thread(r,"Test Thread");
+        /*
+        设置线程的优先级，1-10 数字越大，优先级越低
+        线程调度会优先选择优先级较高的线程
+        但是 Java 的线程优先级属性是高度依赖操作系统的
+        java 线程优先级会映射到操作系统的线程优先级
+        这个属性适用于早期不使用系统线程的 java 版本，现在一般不会使用这个属性了
+         */
+        t.setPriority(Thread.MAX_PRIORITY);
         log.info(t.getState().toString());
         t.start();
         /*
@@ -58,7 +66,6 @@ public class ThreadTest {
          */
         log.info(t.getState().toString());
 
-
         Bank bank = new Bank(4,100000.00);
         Runnable task1 = () -> {
             try {
@@ -66,11 +73,23 @@ public class ThreadTest {
                     double amount = MAX_AMOUNT*Math.random();
                     bank.transfer(0,1,amount);
                     Thread.sleep((int)(DELAY*new Random().nextDouble()));
+                    /*
+                    Thread 实例域 interrupted 表示这个线程是否是 interrupt 状态
+                    调用 interrupt() 方法 ，可以将线程 interrupted 状态置为 true
+                    线程会检查这个状态，一旦检查到线程 interrupted 状态为 true
+                    线程如果是 BLOCKED 状态则无法检查 interrupted 状态
+                    interrupted 状态的线程不一定会被终止，可以捕捉 InterruptedException 后继续业务逻辑
+                    如果未做任何处理，一般来说就会被当成是终止线程的请求
+                     */
                     if (bank.getAccounts()[0]<99990) Thread.currentThread().interrupt();
                 }
             }catch (InterruptedException e){
-                log.info(e.getMessage());
-                Thread.currentThread().interrupt(); // 捕捉 sleep 方法抛出的异常，中断线程
+                // 捕捉 InterruptedException 异常，执行业务逻辑，线程不会被终止
+                for (int i = 0; i < STEPS ; i++) {
+                    double amount = MAX_AMOUNT*Math.random();
+                    bank.transfer(0,1,amount);
+                }
+                log.info("捕捉异常后继续业务逻辑，线程状态：" + Thread.currentThread().getState().toString());
             }finally {
                 log.info(Thread.currentThread().getState().toString());
                 log.info(Arrays.toString(bank.getAccounts()));
