@@ -102,3 +102,5 @@ l
 <src/main/java/com/angers/project/concurrency/ThreadTest.java,6/1/61e4896e0b819bf21964a92ec32f8a0d0300372c
 f
 6src/main/java/com/angers/project/concurrency/Bank.java,1/1/11afb53b5ebe5cece70317870385088c7c3e0928
+k
+;src/main/java/com/angers/project/stream/CountLongWords.java,8/5/85cb1b300eeb8a4214cbc65c1f91f2d70f5f77ea

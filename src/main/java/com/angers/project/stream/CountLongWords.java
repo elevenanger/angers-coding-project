@@ -36,6 +36,12 @@ public class CountLongWords {
              */
             long count = lines.stream()
                     .filter(line -> line.length()>50)
+                    /*
+                    使用 map 对 stream 中的元素进行转换
+                    map 中的函数作用于 stream 中的每一个元素
+                     */
+                    .map(String::toUpperCase)
+                    .map(string -> string.substring(0,1))
                     .count();
             log.info(Long.toString(count));
             /*
@@ -49,4 +55,5 @@ public class CountLongWords {
             e.printStackTrace();
         }
     }
+
 }
