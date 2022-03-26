@@ -2,10 +2,16 @@ package com.angers.project.inheritance;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.IOException;
 import java.io.Serializable;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Random;
+import java.util.stream.Stream;
 
 /**
  * 雇员类
@@ -130,6 +136,14 @@ public class Employee extends Person implements Comparable<Employee>,Cloneable, 
     }
 
     /**
+     * 增加薪水
+     * @param rate double
+     */
+    public Employee adjustSalary(Double rate){
+        this.salary+=salary*rate;
+        return this;
+    }
+    /**
      * private 修改器方法，修改 final 域
      */
     private void initialLocalEvaluations(){
@@ -193,6 +207,18 @@ public class Employee extends Person implements Comparable<Employee>,Cloneable, 
      */
     public int compareTo(Employee o) {
         return Double.compare(this.getSalary(),o.getSalary());
+    }
+
+    /**
+     * 创建 Employee Stream
+     * @param filename 文件名，绝对路径
+     * @return Employee Stream
+     * @throws IOException 文件不存在等 IO 异常
+     */
+    public Stream<Employee> createEmployeeStreamFromFile(String filename) throws IOException {
+        return Files.lines(Paths.get(filename))
+                .map(Employee::getWellPaidInstance)
+                .map(employee -> employee.adjustSalary(Math.random()));
     }
 
     public static void main(String [] args){
