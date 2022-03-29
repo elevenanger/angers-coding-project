@@ -2,6 +2,7 @@ package com.angers.project.inheritance;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Objects;
  * 抽象类无法被实例化
  */
 @Slf4j
-public abstract class Person {
+public abstract class Person implements Serializable {
 
     /*
     实例域 instance fields
