@@ -94,8 +94,6 @@ b
 2src/main/java/com/angers/project/generic/Pair.java,3/7/372c223d930cdb00cffef87d49be2901bcf2756c
 l
 <src/main/java/com/angers/project/stream/ParallelStreams.java,7/a/7ae1d776e05742cd1ac4d2ad9f6e834c4be06ee8
-o
-?src/main/java/com/angers/project/assertion/AssertionTester.java,3/9/39c1ad2de198488eb13e18e0551e4f6b72d97797
 l
 <src/main/java/com/angers/project/concurrency/ThreadTest.java,6/1/61e4896e0b819bf21964a92ec32f8a0d0300372c
 f

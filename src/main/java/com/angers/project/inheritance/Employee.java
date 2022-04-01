@@ -1,6 +1,7 @@
 package com.angers.project.inheritance;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.lang.NonNull;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -9,8 +10,6 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Map;
-import java.util.Random;
 import java.util.stream.Stream;
 
 /**
@@ -70,11 +69,13 @@ public class Employee extends Person implements Comparable<Employee>,Cloneable, 
         evaluations = new StringBuilder();
     }
 
-    /*
-    构造函数，匿名雇员，一个类可以存在多个构造函数
-    这种机制称之为：重载（overload），如果多个方法的名称相同，但是参数不同，编译器必须通过参数类型找出需要调用的方法
+    /**
+     * 构造函数，匿名雇员，一个类可以存在多个构造函数
+     * 这种机制称之为：重载（overload），如果多个方法的名称相同，但是参数不同，编译器必须通过参数类型找出需要调用的方法
+     * @NonNull 注解表示该参数不能为空
+     * @param s 薪水
      */
-    public Employee (double s){
+    public Employee ( @NonNull double s){
         setId();
         setName("Anonymity");
         salary = s;
