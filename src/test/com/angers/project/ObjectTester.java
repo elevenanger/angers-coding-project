@@ -1,7 +1,7 @@
 package com.angers.project;
 
-import com.angers.project.object.Animal;
-import com.angers.project.object.Trainer;
+import com.angers.project.corejava.object.Animal;
+import com.angers.project.corejava.object.Trainer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
