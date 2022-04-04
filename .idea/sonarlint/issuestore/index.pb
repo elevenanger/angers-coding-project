@@ -40,11 +40,15 @@ s
 Csrc/main/java/com/angers/project/onjava8/object/ShowProperties.java,e/6/e6506793787eea077628cbd944e76d921c698350
 k
 ;src/main/java/com/angers/project/onjava8/operator/Tank.java,a/0/a064e733897a0b84150f34fa35d6e0aadffb825e
-n
->src/main/java/com/angers/project/onjava8/operator/MathOps.java,5/5/5506a260641d8a14299994a8077688f003d49b82
 q
 Asrc/main/java/com/angers/project/onjava8/operator/PassObject.java,f/8/f84c4b6fdeb5abf9c97fd9e96e5e0e8d49e81f20
 q
 Asrc/main/java/com/angers/project/onjava8/operator/Assignment.java,2/1/21258fb58dbf82f6209258e54977dba608711ccb
 p
 @src/main/java/com/angers/project/onjava8/operator/DecAndInc.java,8/6/86c90fc33b866bc5a1658ce2cc0f76ed0e9084f1
+n
+>src/main/java/com/angers/project/onjava8/operator/MathOps.java,5/5/5506a260641d8a14299994a8077688f003d49b82
+r
+Bsrc/main/java/com/angers/project/onjava8/operator/Equivalence.java,d/8/d894f5cc5a1598aa9cb270ece0208af55cfd2217
+x
+Hsrc/main/java/com/angers/project/onjava8/operator/DoubleEquivalence.java,3/b/3b290757725b839878a58fcec081846a888c963f
