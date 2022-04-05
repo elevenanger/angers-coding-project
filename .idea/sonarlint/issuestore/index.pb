@@ -48,7 +48,5 @@ p
 @src/main/java/com/angers/project/onjava8/operator/DecAndInc.java,8/6/86c90fc33b866bc5a1658ce2cc0f76ed0e9084f1
 n
 >src/main/java/com/angers/project/onjava8/operator/MathOps.java,5/5/5506a260641d8a14299994a8077688f003d49b82
-r
-Bsrc/main/java/com/angers/project/onjava8/operator/Equivalence.java,d/8/d894f5cc5a1598aa9cb270ece0208af55cfd2217
 x
 Hsrc/main/java/com/angers/project/onjava8/operator/DoubleEquivalence.java,3/b/3b290757725b839878a58fcec081846a888c963f
