@@ -50,3 +50,13 @@ n
 >src/main/java/com/angers/project/onjava8/operator/MathOps.java,5/5/5506a260641d8a14299994a8077688f003d49b82
 x
 Hsrc/main/java/com/angers/project/onjava8/operator/DoubleEquivalence.java,3/b/3b290757725b839878a58fcec081846a888c963f
+r
+Bsrc/main/java/com/angers/project/onjava8/operator/Equivalence.java,d/8/d894f5cc5a1598aa9cb270ece0208af55cfd2217
+s
+Csrc/main/java/com/angers/project/onjava8/operator/ShortCircuit.java,b/0/b082797dac1b4341740f4e24d74782eb7c3b4234
+s
+Csrc/main/java/com/angers/project/onjava8/operator/EqualsMethod.java,0/e/0ed18590a66014aa86098c5f790b5df2233d7ba4
+r
+Bsrc/main/java/com/angers/project/onjava8/operator/Underscores.java,9/6/9649b4d994e06a125db92f40fe1a5b80c7323bbb
+p
+@src/main/java/com/angers/project/onjava8/operator/Exponents.java,1/1/115b54a611d726e3ef3550ffe8bde32787bd500d
