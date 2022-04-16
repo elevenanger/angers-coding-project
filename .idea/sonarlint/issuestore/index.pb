@@ -12,8 +12,6 @@ W
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 n
@@ -308,7 +306,23 @@ r
 Bsrc/main/java/com/angers/project/onjava8/interfaces/Factories.java,5/c/5c1f60b9dd8189e21e2d643eea57f3890cbd4725
 n
 >src/main/java/com/angers/project/onjava8/interfaces/Games.java,6/2/62cc3bcc97a125ed61d1107800952fc8d3527880
+v
+Fsrc/main/java/com/angers/project/onjava8/innerclasses/Destination.java,9/5/95a3c34e5a6022d4002075442a74b46e4702a965
+s
+Csrc/main/java/com/angers/project/onjava8/innerclasses/Contents.java,6/5/65e1f8ade18626337b3e24e4035f878339498a12
+q
+Asrc/main/java/com/angers/project/onjava8/innerclasses/DotNew.java,9/b/9b08624086aa6989eae42bf845c013e4c7bc37de
 r
-Bsrc/main/java/com/angers/project/onjava8/innerclasses/Parcel2.java,e/f/efb290a1f4ad41c0c72545b55334da4d72101af5
-r
-Bsrc/main/java/com/angers/project/onjava8/innerclasses/Parcel1.java,6/6/667c062d12b20ba1dd91f39a70a0e0f280bae1c6
+Bsrc/main/java/com/angers/project/onjava8/innerclasses/DotThis.java,5/4/54badd2ca523478743ab81b6ac14e56ef80f2839
+‡
+Wsrc/main/java/com/angers/project/onjava8/innerclasses/MakingInnerClassWithinMethod.java,8/f/8f7a1410766dd3f04a6615bda9dc876252c2b408
+†
+Vsrc/main/java/com/angers/project/onjava8/innerclasses/DefineInnerClassWithinScope.java,c/c/cc21cf7877d28612534ebeeea92e64b65cdd0ad7
+~
+Nsrc/main/java/com/angers/project/onjava8/innerclasses/AnonymousInnerClass.java,3/b/3be3e6a312a5198b18383f28417d412cac024f7f
+s
+Csrc/main/java/com/angers/project/onjava8/innerclasses/Wrapping.java,9/4/94110669b719b9f1bbd400c35c99827d2c6b3132
+
+Osrc/main/java/com/angers/project/onjava8/innerclasses/AnonymousConstructor.java,9/c/9c6300eafa4953c880dd03d1e35cc046e11f42f7
+…
+Usrc/main/java/com/angers/project/onjava8/innerclasses/InitializeFieldByAnonymous.java,d/1/d173c4fa98f2a390fdaee198bb9c70850e91f8cc
