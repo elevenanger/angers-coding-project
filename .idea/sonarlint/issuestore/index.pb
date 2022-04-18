@@ -354,3 +354,7 @@ t
 Dsrc/main/java/com/angers/project/onjava8/innerclasses/Callbacks.java,6/a/6abf8e5b3d3c8d1e2f4c75004ab8b5b357bfd18a
 {
 Ksrc/main/java/com/angers/project/onjava8/innerclasses/controller/Event.java,2/c/2c13ac064a5cd15a61ade93483603efe27f29fa2
+…
+Usrc/main/java/com/angers/project/onjava8/collection/ApplesAndOrangesWithGenerics.java,e/d/ed82cc1ef5130ee7262b12a0ccacd7ae1293dd8d
+ˆ
+Xsrc/main/java/com/angers/project/onjava8/innerclasses/controller/GreenHouseControls.java,f/2/f2fe88d852828a6b0874c9796508b310ac5e6a55
