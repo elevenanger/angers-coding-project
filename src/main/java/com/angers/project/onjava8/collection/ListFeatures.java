@@ -12,42 +12,42 @@ import java.util.*;
  */
 public class ListFeatures {
     public static void main(String[] args) {
-        List<Pet> pets = new ArrayList<>();
-        pets.add(new Dog());
-        pets.add(new Bird());
-        pets.add(new Cat());
-        pets.add(new Bird());
-        pets.add(new Bird());
-        System.out.println("1: " + pets);
+        List<Petty> petties = new ArrayList<>();
+        petties.add(new Dog());
+        petties.add(new Bird());
+        petties.add(new Cat());
+        petties.add(new Bird());
+        petties.add(new Bird());
+        System.out.println("1: " + petties);
         Dog dog = new Dog();
-        pets.add(dog);
-        System.out.println("2: " + pets);
-        System.out.println("3: " + pets.indexOf(dog));
-        pets.remove(dog);
-        Pet p =pets.get(0);
-        System.out.println("4: " + p + " " + pets.indexOf(p));
-        Pet gang = new Bird();
-        System.out.println("index not exist object : pets.indexOf(gang) : " + pets.indexOf(gang));
-        System.out.println("remove not exist object : pets.remove(gang) : " + pets.remove(gang));
-        System.out.println("remove exist object : pets.remove(p)"+pets.remove(p));
-        pets.add(1,new Bird());
-        System.out.println("insert an index : " + pets);
-        List<Pet> sub = pets.subList(1,4);
+        petties.add(dog);
+        System.out.println("2: " + petties);
+        System.out.println("3: " + petties.indexOf(dog));
+        petties.remove(dog);
+        Petty p = petties.get(0);
+        System.out.println("4: " + p + " " + petties.indexOf(p));
+        Petty gang = new Bird();
+        System.out.println("index not exist object : pets.indexOf(gang) : " + petties.indexOf(gang));
+        System.out.println("remove not exist object : pets.remove(gang) : " + petties.remove(gang));
+        System.out.println("remove exist object : pets.remove(p)"+ petties.remove(p));
+        petties.add(1,new Bird());
+        System.out.println("insert an index : " + petties);
+        List<Petty> sub = petties.subList(1,4);
         System.out.println("sub list : " + sub);
-        System.out.println("contain list : " + pets.containsAll(sub));
-        Collections.sort(sub, Comparator.comparing(Pet::toString));
+        System.out.println("contain list : " + petties.containsAll(sub));
+        Collections.sort(sub, Comparator.comparing(Petty::toString));
         System.out.println("sorted sublist : " + sub);
-        System.out.println("order is not important in containsAll : " + pets.containsAll(sub));
+        System.out.println("order is not important in containsAll : " + petties.containsAll(sub));
         Random random = new Random(10);
         Collections.shuffle(sub,random);
         System.out.println("shuffled list : "+ sub);
-        System.out.println(pets.containsAll(sub));
-        List<Pet> copy = new ArrayList<>(pets);
-        sub = Arrays.asList(pets.get(1),pets.get(3));
+        System.out.println(petties.containsAll(sub));
+        List<Petty> copy = new ArrayList<>(petties);
+        sub = Arrays.asList(petties.get(1), petties.get(3));
         System.out.println("sub : " + sub);
         copy.retainAll(sub); // 取交集
         System.out.println("retained list : " + copy);
-        copy = new ArrayList<>(pets); // fresh copy
+        copy = new ArrayList<>(petties); // fresh copy
         copy.remove(2);
         System.out.println("remove by index : " + copy);
         copy.removeAll(sub);
@@ -56,20 +56,20 @@ public class ListFeatures {
         System.out.println("replace one element : copy.set(1,new Dog()) : " + copy);
         copy.addAll(0,sub);
         System.out.println("insert into copy.addAll(0,sub) : " + copy);
-        System.out.println("isEmpty ? " + pets.isEmpty());
-        pets.clear();
-        System.out.println("remove all elements pets.clear() " + pets.isEmpty());
-        pets.addAll(copy);
-        System.out.println(pets);
-        Object [] objects = pets.toArray();
+        System.out.println("isEmpty ? " + petties.isEmpty());
+        petties.clear();
+        System.out.println("remove all elements pets.clear() " + petties.isEmpty());
+        petties.addAll(copy);
+        System.out.println(petties);
+        Object [] objects = petties.toArray();
         System.out.println(objects[1]);
         // 如果数组参数太小不足以保存列表中的所有元素， toArray() 创建一个合适大小的新数组
-        Pet [] pa = copy.toArray(new Pet[0]);
+        Petty[] pa = copy.toArray(new Petty[0]);
         System.out.println(pa[1]);
     }
 }
 
-abstract class Pet {
+abstract class Petty {
 
     @Override
     public String toString() {
@@ -78,21 +78,21 @@ abstract class Pet {
     abstract void call();
 }
 
-class Dog extends Pet {
+class Dog extends Petty {
     @Override
     void call() {
         System.out.println("wong");
     }
 }
 
-class Cat extends Pet {
+class Cat extends Petty {
     @Override
     void call() {
         System.out.println("mew");
     }
 }
 
-class Bird extends Pet {
+class Bird extends Petty {
     @Override
     void call() {
         System.out.println("Jiu");
