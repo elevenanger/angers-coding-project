@@ -422,3 +422,17 @@ Ksrc/main/java/com/angers/project/onjava8/collection/MultiIterableClass.java,2/
 Lsrc/main/java/com/angers/project/onjava8/collection/CollectionsSequence.java,d/a/da7d64264e7084d03d691c9c657e6b76cee5eacd
 u
 Esrc/main/java/com/angers/project/onjava8/collection/ListFeatures.java,8/2/8254814fbc6d1a009e092733373feccb2c6e15c1
+z
+Jsrc/main/java/com/angers/project/onjava8/functional/LambdaExpressions.java,d/d/ddf0870c62b2d09e06fba80377a5cc75f5ac5f68
+s
+Csrc/main/java/com/angers/project/onjava8/functional/Strategies.java,7/9/79d59306790f7bf17bda1f8bfa4fc0a3d5c461dd
+{
+Ksrc/main/java/com/angers/project/onjava8/functional/RecursiveFactorial.java,b/4/b4fcc7e064055a6e3a9014c74e42845dd6459677
+{
+Ksrc/main/java/com/angers/project/onjava8/functional/RecursiveFibonacci.java,d/5/d506e744ed63cd63025fd23c1edaccb31d5efb6c
+~
+Nsrc/main/java/com/angers/project/onjava8/functional/MultiArgumentsUnbound.java,8/6/86941f6d13693b699f9f1767b45f36c0beb79b2c
+
+Osrc/main/java/com/angers/project/onjava8/functional/UnboundMethodReference.java,c/c/cc5df26ebcda50d71bff439074cd11e9648e5bc9
+€
+Psrc/main/java/com/angers/project/onjava8/functional/RunnableMethodReference.java,6/b/6bd5ce5e3965ef19dcf20e6cee678f7611d735d9
