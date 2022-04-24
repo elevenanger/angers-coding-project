@@ -1,5 +1,7 @@
 package com.angers.project.onjava8.common;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 
 /**
@@ -10,6 +12,8 @@ import java.util.Arrays;
 public class CommonUtils {
 
     public static final String DIVIDE_LINE = "------------------------------------------" ;
+
+    public static final String FILE_PATH= "/Users/liuanglin/data/";
 
     /**
      * 对象拼接空格
