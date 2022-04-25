@@ -1,7 +1,5 @@
 package com.angers.project.onjava8.common;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 
 /**

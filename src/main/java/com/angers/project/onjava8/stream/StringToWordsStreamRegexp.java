@@ -5,6 +5,7 @@ import com.angers.project.onjava8.common.CommonUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Comparator;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
@@ -35,16 +36,19 @@ public class StringToWordsStreamRegexp {
     转换成 Stream
      */
     public Stream<String> stream(){
-        return Pattern.compile("[ ,.?/!]+").splitAsStream(all);
+        return Pattern.compile("[\" ,.?/!]+").splitAsStream(all);
     }
 
     public static void main(String[] args) throws IOException {
         StringToWordsStreamRegexp string = new StringToWordsStreamRegexp("notice.txt");
         string.stream()
                 .skip(3)
+                .filter(w -> w.length() > 10) // filter() 对流中的元素进行过滤
+                .distinct() // distinct() 也是过滤方法，对元素进行去重
                 .limit(20)
                 .peek(System.out::print)
-                .map(s -> s+" ")
+                .sorted(Comparator.reverseOrder()) // sorted() 方法对流中的元素进行排序，可以传入 Comparator 函数定义排序方式
+                .map(s -> s+" ") // 使用相同的函数处理 stream 中的每个元素
                 .forEach(System.out::print);
     }
 }

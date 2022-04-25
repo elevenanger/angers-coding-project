@@ -472,3 +472,5 @@ l
 <src/main/java/com/angers/project/onjava8/stream/Randoms.java,8/9/8932c71d0693a9fcf68ffda0c33382de5214c353
 p
 @src/main/java/com/angers/project/onjava8/stream/RandomWords.java,5/1/51e43ba00d9489b9871a79c6b02410f171b3074a
+r
+Bsrc/main/java/com/angers/project/onjava8/stream/StreamIterate.java,0/6/0638f07789a14bbad5b2e5f08275066a727c5037
