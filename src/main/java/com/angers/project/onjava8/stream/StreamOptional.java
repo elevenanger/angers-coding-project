@@ -17,7 +17,6 @@ import java.util.stream.Stream;
  * 流中一些操作不能确保预期的结果存在的场景下，返回 Optional 对象
  */
 public class StreamOptional {
-    private static final String DEFAULT = "default";
     Stream.Builder<String> builder = Stream.builder();
     public StreamOptional(String ... strings) {
         Arrays.stream(strings).forEach(builder::add);
