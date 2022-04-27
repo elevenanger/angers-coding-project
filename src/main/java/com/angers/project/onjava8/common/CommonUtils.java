@@ -11,6 +11,9 @@ public class CommonUtils {
 
     public static final String DIVIDE_LINE = "------------------------------------------" ;
 
+    public static final String DIVIDE_SIGNAL_BEGIN = ">>>";
+    public static final String DIVIDE_SIGNAL_END = "<<<";
+
     public static final String FILE_PATH= "/Users/liuanglin/data/";
 
     /**
@@ -32,6 +35,9 @@ public class CommonUtils {
         System.out.println(DIVIDE_LINE);
     }
 
+    public static void printDivide(String msg){
+        System.out.println(DIVIDE_SIGNAL_BEGIN + msg +DIVIDE_SIGNAL_END);
+    }
     public static void printDivideLineStart(String desc){
         System.out.println(DIVIDE_LINE);
         System.out.println(desc + " start : ");

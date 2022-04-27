@@ -56,7 +56,16 @@
             <artifactId>postgresql</artifactId>
             <version>42.3.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>name.remal.tools.test</groupId>
+            <artifactId>junit5</artifactId>
+            <version>1.26.147</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+        </dependency>
     </dependencies>
 
     <build>
