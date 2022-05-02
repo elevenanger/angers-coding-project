@@ -10,14 +10,13 @@ public class ForNamePetCreator extends Creator {
     new ArrayList<>();
   // Types you want randomly created:
   private static String[] typeNames = {
-    "reflection.pets.Mutt",
-    "reflection.pets.Pug",
-    "reflection.pets.EgyptianMau",
-    "reflection.pets.Manx",
-    "reflection.pets.Cymric",
-    "reflection.pets.Rat",
-    "reflection.pets.Mouse",
-    "reflection.pets.Hamster"
+          "com.angers.project.onjava8.reflection.pets.Mutt",
+          "com.angers.project.onjava8.reflection.pets.EgyptianMau",
+          "com.angers.project.onjava8.reflection.pets.Manx",
+          "com.angers.project.onjava8.reflection.pets.Cymric",
+          "com.angers.project.onjava8.reflection.pets.Rat",
+          "com.angers.project.onjava8.reflection.pets.Mouse",
+          "com.angers.project.onjava8.reflection.pets.Hamster",
   };
   @SuppressWarnings("unchecked")
   private static void loader() {

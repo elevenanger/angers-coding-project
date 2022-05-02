@@ -86,8 +86,6 @@ x
 Hsrc/main/java/com/angers/project/onjava8/housekeeping/InitialValues.java,4/a/4a7146806dc61a8cfe771357a2abfc4fa4eded3c
 p
 @src/main/java/com/angers/project/onjava8/housekeeping/Rock2.java,0/1/018235a25743681ff2aefe6a28ce327bb251f5f8
-q
-Asrc/main/java/com/angers/project/onjava8/housekeeping/Flower.java,f/7/f781fc699b2d6b178867033444515864fac8b005
 
 Osrc/main/java/com/angers/project/onjava8/housekeeping/StaticInitialization.java,d/f/df107cc90de32e5b20d80c26b51fac532141f004
 q
@@ -386,8 +384,6 @@ z
 Jsrc/main/java/com/angers/project/onjava8/collection/PriorityQueueDemo.java,8/7/878b4524f94f6aed3754bd5e203e057430bbafe8
 r
 Bsrc/main/java/com/angers/project/onjava8/collection/QueueDemo.java,a/3/a3a446b62f916d6540864fff3adc7078ce3fcd21
-x
-Hsrc/main/java/com/angers/project/onjava8/reflection/pets/PetCreator.java,c/0/c0967df6b6d2ea15b1322d2a552276ec026bbf0f
 ~
 Nsrc/main/java/com/angers/project/onjava8/collection/NonCollectionSequence.java,a/d/ad8e76300fae5cc5b2295dadd119f0a70b8e3e2e
 v
@@ -590,3 +586,15 @@ r
 Bsrc/main/java/com/angers/project/onjava8/collection/AddGroups.java,3/3/3356151442391a54abe8564e3ec36d9763dc58a2
 x
 Hsrc/main/java/com/angers/project/corejava/assertion/AssertionTester.java,4/d/4d759c903665a83b0edb214361b93772aa103fb2
+y
+Isrc/main/java/com/angers/project/onjava8/reflection/GenericClassRefs.java,0/0/0001d5b1e8f0a3e88f65772e2dd567aa65263f2c
+q
+Asrc/main/java/com/angers/project/onjava8/housekeeping/Flower.java,f/7/f781fc699b2d6b178867033444515864fac8b005
+
+Osrc/main/java/com/angers/project/onjava8/reflection/pets/ForNamePetCreator.java,c/b/cbe6e30cd06eb4aa22d508b63ab107a06505e699
+r
+Bsrc/main/java/com/angers/project/onjava8/reflection/pets/Mutt.java,c/8/c86fae931ae1f2ae42a6204fa788632a5aa0ac45
+s
+Csrc/main/java/com/angers/project/onjava8/reflection/ClassCasts.java,b/d/bd4dda56b37b2d24fc2f155d06b298af5e138afb
+ˆ
+Xsrc/main/java/com/angers/project/onjava8/reflection/DynamicSupplierWithClassGeneric.java,a/3/a37ba696a036b73435575c314a39d873385a93bd
