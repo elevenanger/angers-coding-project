@@ -598,3 +598,17 @@ s
 Csrc/main/java/com/angers/project/onjava8/reflection/ClassCasts.java,b/d/bd4dda56b37b2d24fc2f155d06b298af5e138afb
 ˆ
 Xsrc/main/java/com/angers/project/onjava8/reflection/DynamicSupplierWithClassGeneric.java,a/3/a37ba696a036b73435575c314a39d873385a93bd
+y
+Isrc/main/java/com/angers/project/onjava8/reflection/pets/PetCounter3.java,7/4/74bb67c75ab08b41ebfd810339ced26c5ab411e8
+y
+Isrc/main/java/com/angers/project/onjava8/reflection/pets/TypeCounter.java,a/4/a40b07cd2238bfc8c927f9e8b893add9fc1f4ada
+y
+Isrc/main/java/com/angers/project/onjava8/reflection/pets/PetCounter2.java,2/f/2f192c5ce9b11154b4effc66e07fc5e6184f985b
+x
+Hsrc/main/java/com/angers/project/onjava8/reflection/pets/PetCounter.java,6/a/6ad38f24c9e610acc12034789d068c0d1d5fdfc2
+w
+Gsrc/main/java/com/angers/project/onjava8/reflection/ShowAllMethods.java,c/a/ca4154afc68f7a9395d16541bb4122c1e9857aa4
+z
+Jsrc/main/java/com/angers/project/onjava8/reflection/FamilyVsExactType.java,8/f/8f80be4785637afbe65c737a3a093dbb8c67e46a
+x
+Hsrc/main/java/com/angers/project/onjava8/reflection/pets/PetCreator.java,c/0/c0967df6b6d2ea15b1322d2a552276ec026bbf0f
