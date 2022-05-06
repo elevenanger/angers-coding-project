@@ -612,3 +612,9 @@ z
 Jsrc/main/java/com/angers/project/onjava8/reflection/FamilyVsExactType.java,8/f/8f80be4785637afbe65c737a3a093dbb8c67e46a
 x
 Hsrc/main/java/com/angers/project/onjava8/reflection/pets/PetCreator.java,c/0/c0967df6b6d2ea15b1322d2a552276ec026bbf0f
+x
+Hsrc/main/java/com/angers/project/onjava8/reflection/SimpleProxyDemo.java,f/b/fb3c7225d4e10e6c3d106e0123af12754dccc052
+|
+Lsrc/main/java/com/angers/project/onjava8/reflection/RegisteredFactories.java,b/4/b4bf9588be025decbfe5595ca07bf662042a0c71
+y
+Isrc/main/java/com/angers/project/onjava8/reflection/SelectingMethods.java,2/9/29fac2286df74a392a3a9457e16c5ff5c33ba45f
