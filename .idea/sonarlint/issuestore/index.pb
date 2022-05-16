@@ -788,5 +788,15 @@ Asrc/main/java/com/angers/project/onjava8/stream/CreateStream.java,c/1/c1b53c41
 Psrc/main/java/com/angers/project/onjava8/stream/CombiningStreamsWithFlatMap.java,5/8/5852042017af7130cec6cbeb225227e50ba357d7
 h
 8src/main/java/com/angers/project/onjava8/enums/Item.java,4/9/49a77805211f8199d98a80d2f64b855999846654
+n
+>src/main/java/com/angers/project/onjava8/annotations/Test.java,9/a/9ac81c9daa5aa351befa0dbd2955466f9efc1d66
 k
 ;src/main/java/com/angers/project/onjava8/enums/Outcome.java,0/c/0cc15dc3d087f71d6c7ad56e1f4e2446a48243a4
+r
+Bsrc/main/java/com/angers/project/onjava8/enums/VendingMachine.java,b/3/b3b3e30a030cb0a300e4bcb2550b507733a802b0
+x
+Hsrc/main/java/com/angers/project/onjava8/annotations/UseCaseTracker.java,0/f/0fbad9f8bed296f63094cce4e7995a0168009229
+v
+Fsrc/main/java/com/angers/project/onjava8/annotations/PasswordUtil.java,d/7/d7e8a7f5a3f0cf9f9bd6663c52008fac4a1f720c
+q
+Asrc/main/java/com/angers/project/onjava8/annotations/UseCase.java,f/b/fb977d9013ad466073f0102fa374af0ef527ceeb
