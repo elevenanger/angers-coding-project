@@ -86,6 +86,13 @@ public class Machina {
 
         timer = new Timer();
 
+        /*
+        thenApplyAsync 异步处理
+        只管提交，立即返回结果
+        这里面涉及到任务结束后的回调
+        回调会由 CompletableFuture 接管
+        从中获取任务最终执行的结果
+         */
         CompletableFuture<Machina> cf1 = CompletableFuture.completedFuture(new Machina(1));
         cf1.thenApplyAsync(Machina::work)
                 .thenApplyAsync(Machina::work)
