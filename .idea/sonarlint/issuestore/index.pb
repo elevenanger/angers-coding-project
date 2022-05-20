@@ -686,8 +686,6 @@ u
 Esrc/main/java/com/angers/project/onjava8/generics/WatercolorSets.java,3/4/3442b6b88a45a2920c82847066f5ee89133b5cb7
 ~
 Nsrc/main/java/com/angers/project/onjava8/generics/watercolors/Watercolors.java,4/f/4fb4a9fa2c3c3def0be3ac8948fda71c297c809c
-k
-;src/main/java/com/angers/project/onjava8/generics/Sets.java,6/a/6a4c53a1f80ab8a45afb43544fbf18778b9625f9
 q
 Asrc/main/java/com/angers/project/onjava8/generics/FilledList.java,e/6/e6dd17f70613d911622f6ea47df8a6dfdc0ce815
 s
