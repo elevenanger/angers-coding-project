@@ -900,3 +900,7 @@ v
 Fsrc/main/java/com/angers/project/onjava8/pattern/SingletonPattern.java,6/5/6516d0e46c38b6c090146a336ba1b32d55dde512
 l
 <src/main/java/com/angers/project/onjava8/pattern/Single.java,7/c/7cbd6e554d3a11f54e2d721f12a3fdd59cc1fb85
+o
+?src/main/java/com/angers/project/onjava8/pattern/StateDemo.java,6/9/69d06c086814e07987995b2efed9de661e619773
+o
+?src/main/java/com/angers/project/onjava8/pattern/ProxyDemo.java,b/9/b9d04abacc2528b6904d06067f61d4628e066ad8
