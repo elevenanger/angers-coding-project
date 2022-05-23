@@ -904,3 +904,5 @@ o
 ?src/main/java/com/angers/project/onjava8/pattern/StateDemo.java,6/9/69d06c086814e07987995b2efed9de661e619773
 o
 ?src/main/java/com/angers/project/onjava8/pattern/ProxyDemo.java,b/9/b9d04abacc2528b6904d06067f61d4628e066ad8
+z
+Jsrc/main/java/com/angers/project/onjava8/pattern/ApplicationFramework.java,2/a/2a310ae5e121936636ef88996f9a6d385bf06c30
