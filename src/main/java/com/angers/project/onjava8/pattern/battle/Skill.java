@@ -14,8 +14,8 @@ public class Skill implements CastSkill{
     private String skillName;
 
     /*
-        技能伤害
-         */
+    技能伤害
+    */
     private int damage;
 
     /**
