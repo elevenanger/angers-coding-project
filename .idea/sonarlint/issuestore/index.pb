@@ -956,8 +956,6 @@ p
 @src/main/java/com/angers/project/onjava8/pattern/trash/Bins.java,1/6/16d133fe800ad9f8272bd3ce5e8a6f944a34d7ce
 v
 Fsrc/main/java/com/angers/project/onjava8/pattern/trash/TrashValue.java,c/e/ce88dae684903a787490f8fc440dc6d46f40cb5f
-u
-Esrc/main/java/com/angers/project/onjava8/pattern/trash/CardBoard.java,f/9/f9b95d65e43494bc91eaffe2b74723b89d10ecfe
 q
 Asrc/main/java/com/angers/project/onjava8/pattern/trash/Paper.java,0/b/0ba01765c6a6d1713b2dcc42a7986e2b2c1dfc3b
 q
