@@ -948,10 +948,6 @@ Bsrc/main/java/com/angers/project/onjava8/pattern/battle/Skill.java,8/9/89a34ba
 Tsrc/main/java/com/angers/project/onjava8/pattern/battle/SkillBattleFieldAdapter.java,2/a/2aa54829c535da60477dce4fa54221e051d22082
 x
 Hsrc/main/java/com/angers/project/onjava8/pattern/battle/BattleField.java,6/2/6264bd1305f7e3d5c22491a8f8dd2db8b81b8304
-s
-Csrc/main/java/com/angers/project/onjava8/pattern/trash/Visitor.java,2/7/27694eb4db1b24f43a66f3298e92acf34e205ed8
-q
-Asrc/main/java/com/angers/project/onjava8/pattern/trash/Trash.java,0/4/042cbb0905e1ec64d828707c6a96fe295d3c8e8e
 p
 @src/main/java/com/angers/project/onjava8/pattern/trash/Bins.java,1/6/16d133fe800ad9f8272bd3ce5e8a6f944a34d7ce
 v
