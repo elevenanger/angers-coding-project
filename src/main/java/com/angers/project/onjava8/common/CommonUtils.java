@@ -16,6 +16,10 @@ public class CommonUtils {
 
     public static final String FILE_PATH= "/Users/liuanglin/data/";
 
+    public static final String IO_FILE_PATH = "/Users/liuanglin/Projects/angers-coding-project/src/main/java/com/angers/project/onjava8/iostream/";
+
+    public static final String NIO_FILE_PATH = "/Users/liuanglin/Projects/angers-coding-project/src/main/java/com/angers/project/onjava8/newio/";
+
     /**
      * 对象拼接空格
      * @param s 参数
