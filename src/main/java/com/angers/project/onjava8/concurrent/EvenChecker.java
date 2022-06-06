@@ -38,7 +38,7 @@ public class EvenChecker implements Runnable{
         checkers.forEach(CompletableFuture::join);
     }
     public static void test(IntGenerator gp){
-        new TimedAbort(2,"未发现偶数");
+        new TimedAbort(2,"未发现奇数");
         test(gp,10);
     }
 }
