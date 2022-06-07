@@ -796,8 +796,6 @@ q
 Asrc/main/java/com/angers/project/onjava8/annotations/UseCase.java,f/b/fb977d9013ad466073f0102fa374af0ef527ceeb
 
 Osrc/main/java/com/angers/project/onjava8/annotations/database/TableCreator.java,e/4/e40afba6080faf65a6067cb14e87f45c1f965f4a
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 ‚
 Rsrc/main/java/com/angers/project/onjava8/annotations/simplest/SimpleProcessor.java,b/8/b8927cdc5d59e14b7ea64ac50831a317a88c7a45
 …
